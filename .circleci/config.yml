@@ -20,8 +20,6 @@ jobs:
       - run:
           name: Setup Android Emulator
           command: sdkmanager "system-images;android-24;default;armeabi-v7a" && echo "no" | avdmanager create avd -n test -k "system-images;android-24;default;armeabi-v7a"
-      - run:
-          name: Accept Licsense
           command: Y
       - run:
           name: Launch Emulator
